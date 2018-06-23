@@ -1,0 +1,237 @@
+\documentclass[12pt, a4paper]{scrreprt}
+
+\usepackage{mystyle}
+\usepackage{float}
+\usepackage{subfig}
+
+\begin{document}
+
+\input{Title}
+
+\tableofcontents
+\pagebreak
+
+\chapter{Grundlagen}
+\section{Quadratische Ergänzung}
+
+Eine quadratische Funktion
+\[f(x)=ax^2+bx+c\]
+kann geschrieben werden als
+\[
+  f(x)=a {\left (x+\frac{b}{2a} \right)}^2+ \left (c-\frac{b^2}{4a} \right)
+\]
+
+Dies ist besonders dann nützlich, wenn nach dem Scheitelpunkt einer Parabel gefragt ist.\\
+Alternatives Vorgehen beim Scheitelpunkt: \(f'(x) = 0\) setzen, berechnetes \(x_0\) als \(f(x_0)\) einsetzen.
+
+\section{Potenzregeln}
+
+\begin{itemize}
+\item \(x^a * x^b = x^{a+b}\)
+\item \(\frac{x^a}{x^b} = x^{a-b}\)
+\item \(x^a * y^a = {(x * y)}^a\)
+\item \(\frac{x^a}{y^a} = {\left(\frac{x}{y}\right)}^a\)
+\end{itemize}
+
+\setcounter{chapter}{4}
+
+\chapter{Elementare Funktionen}
+
+\begin{figure}[H]
+  \centering
+  \subfloat[Sinus / Cosinus]{\includesvg[width=0.5\textwidth]{Grafiken/sinuscosinus}}\hfill%
+  \subfloat[Tangens]{\includesvg[width=0.5\textwidth]{Grafiken/tangens}}
+\end{figure}
+
+% \begin{figure}[H]
+%   \centering
+%   \includesvg[width=0.5\textwidth, height=0.2\textheight]{Grafiken/efunktion}
+%   \caption{$e^x$}
+%   \label{fig:efunktion}
+% \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \subfloat[Logarithmusfunktionen]{\includesvg[width=0.5\textwidth]{Grafiken/logarithmus}}\hfill%
+  \subfloat[Wurzelfunktion]{\includesvg[width=0.5\textwidth]{Grafiken/wurzel}}
+\end{figure}
+
+\chapter{Funktionen und Kurvendiskussion}
+\section{Schnittpunkte mit y-Achse}
+Für Schnittpunkt mit der y-Achse \(f(x)\) mit \(x=0\) auflösen!
+
+\section{Umkehrfunktion \(f^{-1}(x)\)}
+Vorgehen, wenn Umkehrfunktion gesucht:
+
+\begin{itemize}
+\item ersetze \(f(x)\) durch \(y\)
+\item Löse nach \(x\) auf
+\item Tausche \(x\) und \(y\)
+\item Schreibe fertigen Term als \(f^{-1}(x)\) aus
+\end{itemize}
+
+\chapter{Grenzwerte}
+
+\section{Grenzwerte bei gebrochenrationalen Funktionen}
+
+Bei gebrochenrationalen Funktionen wird das Grenzwertverhalten so berechnet, dass immer versucht wird, die höchste Potenz auszuklammern und zu kürzen. Auf diese Art kann erreicht werden, dass einige Brüche entstehen die für \(x \rightarrow \infty\) gegen 0 laufen.
+
+\chapter{Kurvendiskussion}
+
+\section{Nullstellen}
+Für Schnittpunkte mit der x-Achse \(f(x)=0\) setzen und Gleichung lösen!\\
+Evtl.\ zuvor Polynomdivision anwenden um erste Nullstelle herauszufinden.
+
+\subsection{Newton-Verfahren}
+
+Das Newton-Verfahren wird immer dann angewandt, wenn eine \textbf{Nullstelle symbolisch nicht exakt berechnet} werden kann.\\
+Benötigt werden ein guter Startwert \(x_0\) und die Ableitung der Funktion \(f(x)\). Berechnet werden hierbei Näherungslösungen für die Nullstelle in der Nähe von \(x_0\).\\
+\[
+  x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}
+\]
+
+Oder Allgemeiner:
+\[
+  x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}
+\]
+
+Dieses Verfahren wird so lange angewendet, bis \(x_{k+1} = x_k\) ist.
+
+\section{Tangente im Punkt \(x_0\)}
+Wenn nach der Tangente im Punkt \(x_0\) einer Funktion \(f(x_0)\) gefragt ist, so kann die Gleichung dieser Tangente durch
+
+\[
+  g(x)= f(x_0) + f'(x_0) * (x - x_0)
+\]
+
+berechnet werden.\\[1em]
+\textbf{Achtung:} Wenn nach Berührungs- und Schnittpunkten der Tangente \(g(x)\) mit der Funktion \(f(x)\) gefragt ist, so müssen die beiden Funktionsgleichungen eingesetzt und aufgelöst werden. Mehrfache Berührungspunkte sind immer möglich!
+
+\section{Gebrochenrationale Funktionen}
+
+\subsection{Polstellen}
+Es existieren Polstellen überall da, wo die Funktion gegen $\pm \infty$ geht; also an den Stellen, an denen das Nennerpolynom \(=0\) wird.\\
+An Polstellen besitzt die Funktion \textbf{senkrechte Asymptoten}
+
+\subsection{Asymptoten}
+\begin{itemize}
+\item Echt gebrochenrationale Funktionen $\rightarrow$ \(x\)-Achse ist waagrechte Asymptote
+\item Unecht gebrochenrationale Funktion $\rightarrow$ Polynomdivision; waagrechte Asymptote ist Erg.\ der Division ohne Rest
+\item \textbf{Beachten: senkrechte Asymptoten bei Nennerpolynom \(=0\)!}
+\end{itemize}
+
+\section{Funktionsverhalten durch Differenziation}
+
+\begin{framed}
+  \textbf{Generell ist es eine gute Idee, bei einer Kurvendiskussion direkt die erste- und zweite Ableitung auszurechnen!}
+\end{framed}
+
+
+\subsection{Extrempunkte}
+
+Extremwerte werden gefunden, indem die erste Ableitung \(f'(x) = 0\) gesetzt wird. Um jetzt noch herauszufinden, ob ein lokales Maximum  oder -inimum vorliegt wird die berechnete Extremstelle \(x_0\) in die zweite Ableitung \(f''(x_0)\) eingesetzt. Ist das Ergebnis \(>0\), so liegt ein Minimum vor. Ist \(f''(x_0) < 0\), so liegt ein Maximum vor.
+
+\begin{framed}
+  \textbf{Vorgehen beim finden von Extremwerten}
+
+  \begin{itemize}
+  \item Berechnung der ersten und zweiten Ableitung \(f'(x)\) und \(f''(x)\)
+  \item Berechne \(f'(x) = 0\) (Notwendige Bedingung)
+  \item Setze alle errechneten \(x\)-Werte \(x_0. x_y, \dots x_n\) in \(f''(x)\) ein
+  \item Ist \(f''(x_n) > 0\) $\rightarrow$ \textbf{Minimum} (Hinreichende Bedingung)
+  \item Ist \(f''(x_n) < 0\) $\rightarrow$ \textbf{Maximum} (Hinreichende Bedingung)
+  \item Um die Koordinaten der gefundenen Punkte zu finden wird \(x_0\) in die Ursprungsfunktion \(f(x)\) eingesetzt. So ergeben sich H\((x_0|f(x_0))\) bzw. T\((x_0|f(x_0))\)
+  \end{itemize}
+\end{framed}
+
+\subsection{Wendepunkte}
+
+Wendepunkte existieren, wenn die Funktion \textbf{dreimal differenzierbar} ist. Berechnet werden Wendepunkte durch \(f''(x) = 0\). Hinreichende Bedingung ist hierbei, dass die dritte Ableitung existiert und an den gefundenen Stellen \(f'''(x_n) \neq 0\) ist.
+
+\begin{framed}
+  \textbf{Vorgehen beim Finden von Wendepunkten:}
+
+  \begin{itemize}
+  \item zweite Ableitung berechnen und \(f''(x) = 0\) setzen (Notwendige Bedingung)
+  \item Die gefundenen Werte in \(f'''(x_0)\) einsetzen
+  \item Ist \(f'''(x_0) \neq 0\), so besitzt die Funktion im Punkt \(x_0\) einen Wendepunkt.
+  \item Nun noch die gefundenen Punkte \(x_0\) in die Ursprungsfunktion \(f(x)\) einsetzen.
+  \item Das Verhalten der Krümmung (v. Links- nach Rechtskrümmung oder andersrum) kann mithilfe der lokalen Maxima bestimmt werden
+  \end{itemize}
+\end{framed}
+
+\setcounter{chapter}{8}
+\chapter{Integration}
+
+\section{Integration von gebrochenrationalen Funktionen}
+
+Im Falle nach der Integration einer gebrochenrationalen Funktion gefragt ist, muss die Funktion zunächst in mehrere, kleine Brüche zerlegt und diese Brüche dann einzeln integriert werden. Dabei ist die Lösung meist eine Kombination aus \(\ln\)- oder \(\arctan\)-Funktionen.
+
+Vorgehen:
+\begin{itemize}
+\item Berechne die Nennernullstellen und zerlege so das Nennerpolynom in seine Linearfaktoren
+\item Erstelle zu jedem Linearfaktor einen Bruch und ordne dem Zähler jedes Bruchs eine Konstante zu: \(\frac{A}{x-x_0} + \frac{B}{x-x_1} \dots\)
+\item Bringe alles auf einen Nenner (Nenner ist demnach der Nenner der Ursprungsfunktion)
+\item Setze Zähler der Ursprungsfunktion mit dem Zähler der neuen Funktion gleich
+\item Führe einen Koeffizientenvergleich durch und berechne so die Konstanten \(A, B, \dots\)
+\item Leite die einzelnen Brüche auf
+\end{itemize}
+
+Kompliziert wird dieses Vorgehen bei mehrfachen Nullstellen.
+
+Bsp.:
+
+\begin{align*}
+  f(x) &= \frac{x-1}{x^2+4x+4}\\[1em]
+  x^2+4x+4 &= 0\\[1em]
+  \rightarrow x_{0/1} &= -2\\[1em]
+  \text{Linearfaktor} &= (x+2)(x+2)\\[1em]
+       &= {(x+2)}^2\\[1em]
+  \rightarrow &= \frac{A}{x+2} + \frac{B}{{(x+2)}^2}\\[1em]
+  &= \frac{A * (x+2) + B}{{(x+2)}^2} = \frac{Ax + 2A + B}{{(x+2)}^2}
+\end{align*}
+
+\section{Numerisches Berechnen von Integralen: Die Trapezregel}
+
+Kann eine Integral symbolisch nicht exakt gelöst werden, so löst man dieses Integral mit der \textbf{Trapezregel}.
+
+\section{Fläche zwischen zwei Funktionen}
+
+Um die Fläche zu berechnen die zwischen zwei Funktionen; also zwischen zwei Schnittpunkten zweier Funktionen \(f(x)\) und \(g(x)\) liegt, muss man zunächst diese beiden Schnittpunkte herausfinden. Dies passiert, indem man die beiden Funktionen gleichsetzt und nach der Unbekannten \(x\) auflöst.\\
+Als nächstes muss die Funktion, welche geometrisch \glqq{} über \grqq{} der Anderen liegt von der anderen Funktion abgezogen werden, also zum Beispiel \((f(x)) - (g(x))\).\\
+\myhspace{} \textbf{Achtung: Hier nicht die Klammern vergessen! Minusklammer!!!}\\
+Abschließend wird in den zuvor berechneten Grenzen integriert: \(\int_a^b (f(x)) - (g(x)) dx\).
+
+\begin{framed}
+  \textbf{Vorgehen bei der Flächenberechnung, die von zwei Funktionen eingeschlossen wird:}
+
+  \begin{itemize}
+  \item Setze beide Funktionen gleich \(f(x) = g(x)\) und löse nach der Unbekannten \(x\) auf, um die Schnittpunkte, also Integrationsgrenzen zu bestimmen
+  \item Berechne die Differenz der beiden Funktionen. \textbf{Achtung:} Minusklammer beachten!
+  \item Berechne das Integral in den Grenzen, die durch die Schnittpunkte definiert wurden
+  \end{itemize}
+
+  \textbf{Es ist immer hilfreich, die Aufgaben zu skizzieren, falls möglich!}
+\end{framed}
+
+\section{Rotationsvolumen}
+
+Ähnlich wie die Berechnungsformel eines Zylinders \(\pi r^2 \cdot h\) ist auch die Formel für das Rotationsvolumen definiert: \(\pi \int_a^b f(x)^2 dx\)\\[1em]
+\textbf{Wichtig:} Wenn das Rotationsvolumen einer Fläche berechnet werden soll, welches von zwei Funktionen eingeschlossen wird, so muss zuerst das Volumen der oberen Funktion, dann das der unteren Funktion berechnet werden. Zuletzt wird noch die Differenz gebildet.
+
+\chapter{Funktionen mit mehreren Veränderlichen}
+
+\section{Partielle Ableitung}
+
+Eine Funktion \(f(x, y)\) mit mehreren Veränderlichen wird durch \(f_x(x, y)\) bzw. \(f_y(x, y)\) nach \(x\), bzw. \(y\) abgeleitet.\\
+Hierbei wird hier jeweils die Variable, nach der nicht abgeleitet werden soll als konstanter Wert angenommen.\\
+Durch \(f_{xx}(x, y)\), \(f_{yy}(x, y)\) oder auch \(f_{xy}(x, y)\) wird mehrfach abgeleitet, jeweils nach der Variable im Index ganz links zuerst. Im Beispiel \(f_{xy}(x, y)\) wird zum Beispiel zuerst nach \(x\), dann nach \(y\) abgeleitet.
+
+\end{document}
+
+
+%%% TeX-command-extra-options: "-shell-escape"
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

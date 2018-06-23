@@ -1,0 +1,27 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Grundlagen}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Quadratische Erg\IeC {\"a}nzung}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Potenzregeln}{3}{section.1.2}
+\contentsline {chapter}{\numberline {5}Elementare Funktionen}{4}{chapter.5}
+\contentsline {chapter}{\numberline {6}Funktionen und Kurvendiskussion}{5}{chapter.6}
+\contentsline {section}{\numberline {6.1}Schnittpunkte mit y-Achse}{5}{section.6.1}
+\contentsline {section}{\numberline {6.2}Umkehrfunktion \(f^{-1}(x)\)}{5}{section.6.2}
+\contentsline {chapter}{\numberline {7}Grenzwerte}{6}{chapter.7}
+\contentsline {section}{\numberline {7.1}Grenzwerte bei gebrochenrationalen Funktionen}{6}{section.7.1}
+\contentsline {chapter}{\numberline {8}Kurvendiskussion}{7}{chapter.8}
+\contentsline {section}{\numberline {8.1}Nullstellen}{7}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Newton-Verfahren}{7}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.2}Tangente im Punkt \(x_0\)}{7}{section.8.2}
+\contentsline {section}{\numberline {8.3}Gebrochenrationale Funktionen}{8}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Polstellen}{8}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Asymptoten}{8}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Funktionsverhalten durch Differenziation}{8}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Extrempunkte}{8}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Wendepunkte}{9}{subsection.8.4.2}
+\contentsline {chapter}{\numberline {9}Integration}{10}{chapter.9}
+\contentsline {section}{\numberline {9.1}Integration von gebrochenrationalen Funktionen}{10}{section.9.1}
+\contentsline {section}{\numberline {9.2}Numerisches Berechnen von Integralen: Die Trapezregel}{11}{section.9.2}
+\contentsline {section}{\numberline {9.3}Fl\IeC {\"a}che zwischen zwei Funktionen}{11}{section.9.3}
+\contentsline {section}{\numberline {9.4}Rotationsvolumen}{11}{section.9.4}
+\contentsline {chapter}{\numberline {10}Funktionen mit mehreren Ver\IeC {\"a}nderlichen}{12}{chapter.10}
+\contentsline {section}{\numberline {10.1}Partielle Ableitung}{12}{section.10.1}
