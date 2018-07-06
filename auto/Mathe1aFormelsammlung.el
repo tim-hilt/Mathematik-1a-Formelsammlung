@@ -17,6 +17,7 @@
     "scrreprt12"
     "mystyle"
     "float"
-    "subfig"))
+    "subfig"
+    "amssymb"))
  :latex)
 

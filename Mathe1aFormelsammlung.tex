@@ -3,6 +3,7 @@
 \usepackage{mystyle}
 \usepackage{float}
 \usepackage{subfig}
+\usepackage{amssymb}
 
 \begin{document}
 
@@ -11,6 +12,13 @@
 \tableofcontents
 \pagebreak
 
+\chapter{Allgemeine Notizen}
+\begin{itemize}
+\item \textbf{Bei LGS einfach immer 1. Zeile \(-\) 2. Zeile!}
+\item \textbf{Bei Integration Konstante \(C\) nicht vergessen!}
+\item \textbf{Wenn \(\ln\)-Funktion rauskommt auf Betragsstriche achten!}
+\item \textbf{Beim Wurzel ziehen immer \(\pm\) verwenden!}
+\end{itemize}
 \chapter{Grundlagen}
 \section{Quadratische Ergänzung}
 
@@ -56,7 +64,7 @@ Alternatives Vorgehen beim Scheitelpunkt: \(f'(x) = 0\) setzen, berechnetes \(x_
   \subfloat[Wurzelfunktion]{\includesvg[width=0.5\textwidth]{Grafiken/wurzel}}
 \end{figure}
 
-\chapter{Funktionen und Kurvendiskussion}
+\chapter{Funktionen}
 \section{Schnittpunkte mit y-Achse}
 Für Schnittpunkt mit der y-Achse \(f(x)\) mit \(x=0\) auflösen!
 
@@ -70,13 +78,53 @@ Vorgehen, wenn Umkehrfunktion gesucht:
 \item Schreibe fertigen Term als \(f^{-1}(x)\) aus
 \end{itemize}
 
+\section{Periodische Funktionen}
+
+\subsection{Sinus in Kosinus umrechnen}
+\begin{itemize}
+\item \(\sin(x) = \cos(x - \frac{\pi}{2})\)
+\item \(\cos(x) = \sin(x + \frac{\pi}{2})\)
+\end{itemize}
+
+\subsection{Allgemeine Kosinusfunktion}
+
+\textbf{Allgemeine Kosinusfunktion:} \(f(t) = A \cos(\omega t + \varphi) + C\)
+
+\begin{itemize}
+\item \makebox[4cm]{Periodendauer \(T\): \hfill} \(T = \frac{2\pi}{\omega}\)
+\item \makebox[4cm]{Nullstellen: \hfill} \(t = - \frac{\varphi}{\omega} + \frac{T}{4} + \frac{kT}{2} \qquad ;k \in \mathbb{Z}\)
+\item \makebox[4cm]{Hochpunktstellen: \hfill} \(t = - \frac{\varphi}{\omega} + kT \qquad ;k \in \mathbb{Z}\)
+\item \makebox[4cm]{Tiefpunktstellen: \hfill} \(t = - \frac{\varphi}{\omega} + \frac{T}{2} + kT \qquad ;k \in \mathbb{Z}\)
+\end{itemize}
+
+\textbf{Achtung: Gefragt sind oft die Hochpunkte, nicht nur die \(t\)-Stellen!}\\
+\textbf{Außerdem gilt es, die \(y\)-Verschiebung \(C\) zu beachten.}
+
 \chapter{Grenzwerte}
 
 \section{Grenzwerte bei gebrochenrationalen Funktionen}
 
 Bei gebrochenrationalen Funktionen wird das Grenzwertverhalten so berechnet, dass immer versucht wird, die höchste Potenz auszuklammern und zu kürzen. Auf diese Art kann erreicht werden, dass einige Brüche entstehen die für \(x \rightarrow \infty\) gegen 0 laufen.
 
+Allgemein kann der Grenzwert gebildet werden über:
+
+\begin{itemize}
+\item Ausklammern der höchsten Potenz
+\item Nur höchste Potenz betrachten (Bei \(\lim_{k \rightarrow \infty}\))
+\item Bernoulli bei Typ \(\frac{0}{0}\) bzw. \(\frac{\infty}{\infty}\)
+\end{itemize}
+
 \chapter{Kurvendiskussion}
+
+\section{Symmetrie}
+
+\begin{itemize}
+\item \makebox[4cm]{Achsensymmetrie: \hfill} \(f(x) = f(-x)\)
+\item \makebox[4cm]{Punktsymmetrie: \hfill} \(f(-x) = -f(x)\)
+\end{itemize}
+
+\textbf{Zum Prüfen zwei Werte einsetzen, ansonsnten allgemein Funktion mit sich selbst gleichsetzen und Minus richtig setzen}
+
 
 \section{Nullstellen}
 Für Schnittpunkte mit der x-Achse \(f(x)=0\) setzen und Gleichung lösen!\\
@@ -85,7 +133,8 @@ Evtl.\ zuvor Polynomdivision anwenden um erste Nullstelle herauszufinden.
 \subsection{Newton-Verfahren}
 
 Das Newton-Verfahren wird immer dann angewandt, wenn eine \textbf{Nullstelle symbolisch nicht exakt berechnet} werden kann.\\
-Benötigt werden ein guter Startwert \(x_0\) und die Ableitung der Funktion \(f(x)\). Berechnet werden hierbei Näherungslösungen für die Nullstelle in der Nähe von \(x_0\).\\
+Benötigt werden ein guter Startwert \(x_0\) und die Ableitung der Funktion \(f(x)\). Berechnet werden hierbei Näherungslösungen für die Nullstelle in der Nähe von \(x_0\).
+
 \[
   x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}
 \]
@@ -105,7 +154,8 @@ Wenn nach der Tangente im Punkt \(x_0\) einer Funktion \(f(x_0)\) gefragt ist, s
 \]
 
 berechnet werden.\\[1em]
-\textbf{Achtung:} Wenn nach Berührungs- und Schnittpunkten der Tangente \(g(x)\) mit der Funktion \(f(x)\) gefragt ist, so müssen die beiden Funktionsgleichungen eingesetzt und aufgelöst werden. Mehrfache Berührungspunkte sind immer möglich!
+\textbf{Achtung:} Wenn nach Berührungs- und Schnittpunkten der Tangente \(g(x)\) mit der Funktion \(f(x)\) gefragt ist, so müssen die beiden Funktionsgleichungen\\ eingesetzt und aufgelöst werden. Mehrfache Berührungspunkte sind immer möglich!
+
 
 \section{Gebrochenrationale Funktionen}
 
@@ -144,6 +194,14 @@ Extremwerte werden gefunden, indem die erste Ableitung \(f'(x) = 0\) gesetzt wir
   \end{itemize}
 \end{framed}
 
+\textbf{Um zu prüfen ob Hoch- oder Tiefpunkt vorliegt wird in die Ableitungsfunktion ein Punkt vor- und ein Punkt nach der berechneten Extremstelle \(x_0\) eingegeben! Wechselt hier das Vorzeichen von \dots
+  \begin{itemize}
+  \item \makebox[5cm]{- nach +: \hfill} Steigung ist zuerst negativ, dann positiv $\rightarrow$ Tiefpunkt
+  \item \makebox[5cm]{+ nach -: \hfill} Steigung ist zuerst positiv, dann negativ $\rightarrow$ Hochpunkt
+  \item \makebox[5cm]{- nach - oder + nach +: \hfill} Steigung wechselt das Vorzeichen nicht $\rightarrow$ Sattelpunkt
+  \end{itemize}
+}
+
 \subsection{Wendepunkte}
 
 Wendepunkte existieren, wenn die Funktion \textbf{dreimal differenzierbar} ist. Berechnet werden Wendepunkte durch \(f''(x) = 0\). Hinreichende Bedingung ist hierbei, dass die dritte Ableitung existiert und an den gefundenen Stellen \(f'''(x_n) \neq 0\) ist.
@@ -159,6 +217,15 @@ Wendepunkte existieren, wenn die Funktion \textbf{dreimal differenzierbar} ist. 
   \item Das Verhalten der Krümmung (v. Links- nach Rechtskrümmung oder andersrum) kann mithilfe der lokalen Maxima bestimmt werden
   \end{itemize}
 \end{framed}
+
+\section{Kriterium für Links- und Rechtskrümmung}
+
+Wenn eine Funktion \(f(x)\) auf ganz \(\mathbb{R}\) links- oder rechtsgekrümmt ist, kann dies über die zweite Ableitung \(f''(x)\) nachgewiesen werden
+
+\begin{itemize}
+\item \textbf{Linkskrümmung} (Steigung ist negativ), wenn \(f''(x) < 0\) auf ganz \(\mathbb{R}\) ist 
+\item \textbf{Rechtskrümmung} (Steigung ist positiv), wenn \(f''(x) > 0\) auf ganz \(\mathbb{R}\) ist 
+\end{itemize}
 
 \setcounter{chapter}{8}
 \chapter{Integration}
@@ -219,6 +286,16 @@ Abschließend wird in den zuvor berechneten Grenzen integriert: \(\int_a^b (f(x)
 Ähnlich wie die Berechnungsformel eines Zylinders \(\pi r^2 \cdot h\) ist auch die Formel für das Rotationsvolumen definiert: \(\pi \int_a^b f(x)^2 dx\)\\[1em]
 \textbf{Wichtig:} Wenn das Rotationsvolumen einer Fläche berechnet werden soll, welches von zwei Funktionen eingeschlossen wird, so muss zuerst das Volumen der oberen Funktion, dann das der unteren Funktion berechnet werden. Zuletzt wird noch die Differenz gebildet.
 
+\section{Beispiele}
+
+\[
+  \int \frac{2}{x - 2} dx \quad = \quad 2 \ln |x - 2|
+\]
+
+\[
+  \int \frac{2}{{(x - 2)}^2} dx \quad = \quad - \frac{2}{x - 2}
+\]
+
 \chapter{Funktionen mit mehreren Veränderlichen}
 
 \section{Partielle Ableitung}
@@ -226,6 +303,27 @@ Abschließend wird in den zuvor berechneten Grenzen integriert: \(\int_a^b (f(x)
 Eine Funktion \(f(x, y)\) mit mehreren Veränderlichen wird durch \(f_x(x, y)\) bzw. \(f_y(x, y)\) nach \(x\), bzw. \(y\) abgeleitet.\\
 Hierbei wird hier jeweils die Variable, nach der nicht abgeleitet werden soll als konstanter Wert angenommen.\\
 Durch \(f_{xx}(x, y)\), \(f_{yy}(x, y)\) oder auch \(f_{xy}(x, y)\) wird mehrfach abgeleitet, jeweils nach der Variable im Index ganz links zuerst. Im Beispiel \(f_{xy}(x, y)\) wird zum Beispiel zuerst nach \(x\), dann nach \(y\) abgeleitet.
+
+\section{Wertebereich}
+
+\textbf{Überlegung:} Wann wird \(f(x,y)\) maximal? Z.b.\ bei gebr.\ rat.\ Fkt.\: Wann ist Zähler maximal und Nenner minimal (Wenn beide jeweils von einer anderen Variable abhängen)?
+
+\section{Tangentialebene}
+
+\(g(x,y) = f(x_0,y_0) + f_x(x_0,y_0) \cdot (x - x_0) + f_y(x_0,y_0) \cdot (y - y_0)\)
+
+\section{Horizontale Tangentialebene}
+
+Punkte, an denen Fkt.\ eine horizontale Tangentialebene besitzt: \(f_x(x,y) \quad \&\& \quad f_y(x,y) = 0\)
+
+\textbf{Vorgehen wenn horizontale Tangentialebene gesucht:}
+
+\begin{enumerate}
+\item Berechne Partielle Ableitungen \(f_x(x,y)\) und \(f_y(x,y)\)
+\item Setze beide Ableitungen \textbf{gleich Null} (d.h.\ wann wird \(x\) null, wann wird \(y\) null)
+\item vergleiche beide Ergebnisse $\rightarrow$ wann werden \(x\) und \(y\) beide null?
+\item Antwort ist der Punkt oder die Punkte in der \(x-y\)-Ebene, an denen \(f(x,y)\) keine Steigung hat
+\end{enumerate}
 
 \end{document}
 

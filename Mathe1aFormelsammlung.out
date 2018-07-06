@@ -1,26 +1,36 @@
-\BOOKMARK [0][-]{chapter.1}{Grundlagen}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Quadratische Erg\344nzung}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Potenzregeln}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.5}{Elementare Funktionen}{}% 4
-\BOOKMARK [0][-]{chapter.6}{Funktionen und Kurvendiskussion}{}% 5
-\BOOKMARK [1][-]{section.6.1}{Schnittpunkte mit y-Achse}{chapter.6}% 6
-\BOOKMARK [1][-]{section.6.2}{Umkehrfunktion f-1\(x\)}{chapter.6}% 7
-\BOOKMARK [0][-]{chapter.7}{Grenzwerte}{}% 8
-\BOOKMARK [1][-]{section.7.1}{Grenzwerte bei gebrochenrationalen Funktionen}{chapter.7}% 9
-\BOOKMARK [0][-]{chapter.8}{Kurvendiskussion}{}% 10
-\BOOKMARK [1][-]{section.8.1}{Nullstellen}{chapter.8}% 11
-\BOOKMARK [2][-]{subsection.8.1.1}{Newton-Verfahren}{section.8.1}% 12
-\BOOKMARK [1][-]{section.8.2}{Tangente im Punkt x0}{chapter.8}% 13
-\BOOKMARK [1][-]{section.8.3}{Gebrochenrationale Funktionen}{chapter.8}% 14
-\BOOKMARK [2][-]{subsection.8.3.1}{Polstellen}{section.8.3}% 15
-\BOOKMARK [2][-]{subsection.8.3.2}{Asymptoten}{section.8.3}% 16
-\BOOKMARK [1][-]{section.8.4}{Funktionsverhalten durch Differenziation}{chapter.8}% 17
-\BOOKMARK [2][-]{subsection.8.4.1}{Extrempunkte}{section.8.4}% 18
-\BOOKMARK [2][-]{subsection.8.4.2}{Wendepunkte}{section.8.4}% 19
-\BOOKMARK [0][-]{chapter.9}{Integration}{}% 20
-\BOOKMARK [1][-]{section.9.1}{Integration von gebrochenrationalen Funktionen}{chapter.9}% 21
-\BOOKMARK [1][-]{section.9.2}{Numerisches Berechnen von Integralen: Die Trapezregel}{chapter.9}% 22
-\BOOKMARK [1][-]{section.9.3}{Fl\344che zwischen zwei Funktionen}{chapter.9}% 23
-\BOOKMARK [1][-]{section.9.4}{Rotationsvolumen}{chapter.9}% 24
-\BOOKMARK [0][-]{chapter.10}{Funktionen mit mehreren Ver\344nderlichen}{}% 25
-\BOOKMARK [1][-]{section.10.1}{Partielle Ableitung}{chapter.10}% 26
+\BOOKMARK [0][-]{chapter.1}{Allgemeine Notizen}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Grundlagen}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Quadratische Erg\344nzung}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Potenzregeln}{chapter.2}% 4
+\BOOKMARK [0][-]{chapter.5}{Elementare Funktionen}{}% 5
+\BOOKMARK [0][-]{chapter.6}{Funktionen}{}% 6
+\BOOKMARK [1][-]{section.6.1}{Schnittpunkte mit y-Achse}{chapter.6}% 7
+\BOOKMARK [1][-]{section.6.2}{Umkehrfunktion f-1\(x\)}{chapter.6}% 8
+\BOOKMARK [1][-]{section.6.3}{Periodische Funktionen}{chapter.6}% 9
+\BOOKMARK [2][-]{subsection.6.3.1}{Sinus in Kosinus umrechnen}{section.6.3}% 10
+\BOOKMARK [2][-]{subsection.6.3.2}{Allgemeine Kosinusfunktion}{section.6.3}% 11
+\BOOKMARK [0][-]{chapter.7}{Grenzwerte}{}% 12
+\BOOKMARK [1][-]{section.7.1}{Grenzwerte bei gebrochenrationalen Funktionen}{chapter.7}% 13
+\BOOKMARK [0][-]{chapter.8}{Kurvendiskussion}{}% 14
+\BOOKMARK [1][-]{section.8.1}{Symmetrie}{chapter.8}% 15
+\BOOKMARK [1][-]{section.8.2}{Nullstellen}{chapter.8}% 16
+\BOOKMARK [2][-]{subsection.8.2.1}{Newton-Verfahren}{section.8.2}% 17
+\BOOKMARK [1][-]{section.8.3}{Tangente im Punkt x0}{chapter.8}% 18
+\BOOKMARK [1][-]{section.8.4}{Gebrochenrationale Funktionen}{chapter.8}% 19
+\BOOKMARK [2][-]{subsection.8.4.1}{Polstellen}{section.8.4}% 20
+\BOOKMARK [2][-]{subsection.8.4.2}{Asymptoten}{section.8.4}% 21
+\BOOKMARK [1][-]{section.8.5}{Funktionsverhalten durch Differenziation}{chapter.8}% 22
+\BOOKMARK [2][-]{subsection.8.5.1}{Extrempunkte}{section.8.5}% 23
+\BOOKMARK [2][-]{subsection.8.5.2}{Wendepunkte}{section.8.5}% 24
+\BOOKMARK [1][-]{section.8.6}{Kriterium f\374r Links- und Rechtskr\374mmung}{chapter.8}% 25
+\BOOKMARK [0][-]{chapter.9}{Integration}{}% 26
+\BOOKMARK [1][-]{section.9.1}{Integration von gebrochenrationalen Funktionen}{chapter.9}% 27
+\BOOKMARK [1][-]{section.9.2}{Numerisches Berechnen von Integralen: Die Trapezregel}{chapter.9}% 28
+\BOOKMARK [1][-]{section.9.3}{Fl\344che zwischen zwei Funktionen}{chapter.9}% 29
+\BOOKMARK [1][-]{section.9.4}{Rotationsvolumen}{chapter.9}% 30
+\BOOKMARK [1][-]{section.9.5}{Beispiele}{chapter.9}% 31
+\BOOKMARK [0][-]{chapter.10}{Funktionen mit mehreren Ver\344nderlichen}{}% 32
+\BOOKMARK [1][-]{section.10.1}{Partielle Ableitung}{chapter.10}% 33
+\BOOKMARK [1][-]{section.10.2}{Wertebereich}{chapter.10}% 34
+\BOOKMARK [1][-]{section.10.3}{Tangentialebene}{chapter.10}% 35
+\BOOKMARK [1][-]{section.10.4}{Horizontale Tangentialebene}{chapter.10}% 36

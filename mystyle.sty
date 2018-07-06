@@ -1,6 +1,6 @@
 \ProvidesPackage{mystyle}
 
-\usepackage[margin=1.5cm]{geometry} % Sets Left and right Margins to be 2.5cm 
+\usepackage[margin=2.5cm]{geometry} % Sets Left and right Margins to be 2.5cm 
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
@@ -13,12 +13,13 @@
 \newcommand{\mybfred}[1]{\textbf{\textcolor{myred}{#1}}} % Mein erster, komplett eigener Latex-Macro!!!
 
 \usepackage{svg}
-\usepackage[colorlinks=true,linkcolor=black, linktoc=all]{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, linktoc=all]{hyperref}
 \usepackage{makecell} % To keep spacing of text in tables
 \setcellgapes{4pt} % Parameter for the spacing
 
 \renewcommand{\familydefault}{\sfdefault} % Schreibe das gesamte Dokument in serifenloser Schrift (außer Math-Modes)
 
+%% Macht alles Mathezeugs ein bisschen größer und besser lesbar
 \everymath{\displaystyle}
 
 \makeatletter
@@ -29,6 +30,8 @@
 
 \renewcommand*\sectfont{\color{myred}\sffamily\bfseries}
 \addtokomafont{paragraph}{\normalcolor\normalfont}
+\setkomafont{caption}{\footnotesize}
+\setkomafont{captionlabel}{\usekomafont{caption}}
 
 \newcommand{\myhspace}{\-\hspace{1.5cm}}
 \newcommand{\mytextred}[1]{\textcolor{myred}{#1}}
